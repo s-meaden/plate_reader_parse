@@ -17,8 +17,6 @@ if (length(args)==0) {
 
 # Script to take plate reader output and covert to long dataframe.
 
-#df <- read_excel("~/Desktop/plate_reader_test/FB_Growth_assay_Zor+Ths.xlsx", sheet = "Photometric1")
-
 df<-read_excel(args[1], sheet = "Photometric1")
 
 write.csv(df, args[2], row.names = FALSE, quote = FALSE)
