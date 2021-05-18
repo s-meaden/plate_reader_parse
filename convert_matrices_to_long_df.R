@@ -7,9 +7,7 @@ library(dplyr)
 args = commandArgs(trailingOnly=TRUE)
 
 df<-read.csv(args[1], header = T)
-#df<-read.table("~/Dropbox/MC_fellowship/MCF/SS/structure_altr_proj/student_project/septu_project/wurz_strains/wurz_strain_check_matrices.csv",
-#              header = T)
-
+             header = T)
 
 # Get rid of random stuff
 keeps<-c('Value', 'X1', 'X2', 'X3', 'X3', 'X4', 'X5', 'X6',
